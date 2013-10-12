@@ -16,14 +16,24 @@ And then execute:
 $ bundle
 ```
 
-<!-- Or install it yourself as:
-```ruby
-$ gem install metam
-``` -->
-
 ## Usage
 
-TODO: Write usage instructions here
+Example: for a User model:
+```ruby
+# encoding: utf-8
+
+require 'metam'
+
+class User < ActiveRecord::Base
+
+  # Serialize the metadata in order to be stored in the database
+  serialize :metadata, Hash
+  
+  # Building the metamodel for the user object
+  metamodel scope: ->(user) { user.affiliation }, store: :metadata
+
+end
+```
 
 ## Contributing
 

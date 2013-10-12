@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.name          = "metam"
   spec.version       = Metam::VERSION
   spec.authors       = ["Amine Labidi"]
-  spec.email         = ["labidi@mediapeers.com"]
+  spec.email         = ["med.amine.labidi@gmail.com"]
   spec.description   = %q{Dynamic attributes and validators}
   spec.summary       = %q{Dynamic attributes and validators}
   spec.homepage      = "https://github.com/mp-alabidi/mpx-metamodels"
