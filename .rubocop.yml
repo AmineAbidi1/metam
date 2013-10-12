@@ -1,0 +1,20 @@
+AllCops:
+  Includes:
+    - Rakefile
+    - config.ru
+  Excludes:
+    - db/**
+    - config/**
+    - script/**
+    - bin/*
+    - Rakefile
+    - config.ru
+
+LineLength:
+  Enabled: false
+
+MethodLength:
+  Max: 30
+
+Documentation:
+  Enabled: false
